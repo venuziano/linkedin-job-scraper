@@ -1,0 +1,8 @@
+{
+  "dependencies": ["."],
+  "node_version": "20",
+  "env": ".env",
+  "graphs": {
+    "keyword-extractor": "./index.js:app"
+  }
+}

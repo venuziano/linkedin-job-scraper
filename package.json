@@ -1,0 +1,28 @@
+{
+  "name": "linkedin-job-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node run.js",
+    "start:dev": "nodemon run.js",
+    "lg:dev": "npx @langchain/langgraph-cli dev -c langgraph.json --port 8123 --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^0.3.63",
+    "@langchain/langgraph": "^0.3.8",
+    "@langchain/openai": "^0.6.1",
+    "dotenv": "^17.2.0",
+    "langsmith": "^0.3.46",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@langchain/langgraph-cli": "^0.0.47",
+    "nodemon": "^3.1.10"
+  }
+}

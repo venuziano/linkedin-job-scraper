@@ -1,0 +1,20 @@
+services:
+  linkedin-job-scraper:
+    env_file: .env
+    build: .
+    ports:
+      - "8123:8123"
+      # - "3010:3010"  
+    volumes:
+      - .:/src             
+      - node_modules:/src/node_modules
+    container_name: linkedin-job-scraper
+    # restart: unless-stopped
+    # depends_on:
+    #   - postgres
+    #   - mailhog
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+
+volumes:
+  node_modules:
