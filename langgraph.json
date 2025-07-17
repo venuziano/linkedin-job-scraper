@@ -4,6 +4,6 @@
   "env": ".env",
   "graphs": {
     "keyword-extractor": "./index.js:app",
-    "test": "./test.js:app"
+    "embedding": "./embedding.js:app"
   }
 }
