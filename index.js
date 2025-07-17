@@ -12,67 +12,40 @@ const model = new ChatOpenAI({
   model: "o4-mini"
 });
 
-// Hardcoded resume and post for demo
-// const RESUME_TEXT = `Front end React, Next.js, Redux
-// TypeScript & JavaScript
-// Figma to code & Animations
-// Tanstack/React Query & SWR
-// Tailwind CSS, Bootstrap, MaterialUI, Ant Design, PrimeReact
-// PostCSS, Webpack, Vite
-// Jest & Playwright
-// Progressive Web App (PWA) backend Node.js, Express, Nest.js
-// TypeScript
-// Redis
-// REST & GraphQL APIs
-// PostgreSQL, MySQL, Oracle
-// MongoDB, Amazon DocumentDB
-// MVC, DDD, Clean & Event-Driven Arch.
-// AWS, Vercel, Heroku
-// SonarQube
-// Docker, Rancher
-// GitHub Actions & Bitbucket Pipeline
-// Sentry
-// CloudWatch
-// Google Analytics
-// Error Handling & Log Monitoring
-// Cursor, OpenAI
-// LangChain & LangGraph & LangSmith
-// `;
+const POST_TEXT = `🚀 We’re hiring! | Senior Fullstack Engineer (React / Node / GraphQL)
 
-// const POST_TEXT = `🚀 We’re hiring! | Senior Fullstack Engineer (React / Node / GraphQL)
+🌎 100% Remote | 💼 6-month contract (with extension) | 🌐 Global client
 
-// 🌎 100% Remote | 💼 6-month contract (with extension) | 🌐 Global client
+We’re looking for a strong fullstack dev experienced in:
+✅ React.js + TypeScript
+ ✅ Node.js
+ ✅ Apollo GraphQL (Client & Server)
+ ✅ AWS (EKS, RDS), CI/CD, Docker, Kubernetes
+Nice to have: Python, Web Vitals, ArgoCD, CircleCI
 
-// We’re looking for a strong fullstack dev experienced in:
-// ✅ React.js + TypeScript
-//  ✅ Node.js
-//  ✅ Apollo GraphQL (Client & Server)
-//  ✅ AWS (EKS, RDS), CI/CD, Docker, Kubernetes
-// Nice to have: Python, Web Vitals, ArgoCD, CircleCI
-
-// 💡 You’ll work on system migration, federated GraphQL APIs, performance tuning, and fullstack delivery.`;
+💡 You’ll work on system migration, federated GraphQL APIs, performance tuning, and fullstack delivery.`;
 
 
 
-const POST_TEXT = `We’re Hiring: Senior Machine Learning Engineer (LLMs & Infrastructure)
+// const POST_TEXT = `We’re Hiring: Senior Machine Learning Engineer (LLMs & Infrastructure)
 
-Hi everyone! 👋 At WillDom, we’re looking for a Senior ML Engineer to help us build smart, scalable NLP solutions using the latest deep learning and MLOps tools.
+// Hi everyone! 👋 At WillDom, we’re looking for a Senior ML Engineer to help us build smart, scalable NLP solutions using the latest deep learning and MLOps tools.
 
-💰 USD pay | 📝 Contractor role | 🌎 100% Remote (Latam) | 🤖 Cutting-edge AI
+// 💰 USD pay | 📝 Contractor role | 🌎 100% Remote (Latam) | 🤖 Cutting-edge AI
 
-What you’ll do:
-Build real-time NLP agents with BERT, SmallBERT, and Hugging Face TGI.
-Deploy and manage models at scale on Azure AKS (GPU support) using Kubernetes & Helm.
-Develop high-performance APIs with FastAPI.
-Automate workflows with CI/CD pipelines (Azure DevOps).
+// What you’ll do:
+// Build real-time NLP agents with BERT, SmallBERT, and Hugging Face TGI.
+// Deploy and manage models at scale on Azure AKS (GPU support) using Kubernetes & Helm.
+// Develop high-performance APIs with FastAPI.
+// Automate workflows with CI/CD pipelines (Azure DevOps).
 
-✅ What we’re looking for:
-React, Next.js, Typescript, Tailwind CSS,
-Nest, Node, Jest,
-5+ years in ML or software engineering.
-Strong Python skills (3.x).
-Experience with ML infrastructure, deployment, and cloud GPUs (Azure preferred).
-Bonus: knowledge of C++, C#, or Rust.`;
+// ✅ What we’re looking for:
+// React, Next.js, Typescript, Tailwind CSS,
+// Nest, Node, Jest,
+// 5+ years in ML or software engineering.
+// Strong Python skills (3.x).
+// Experience with ML infrastructure, deployment, and cloud GPUs (Azure preferred).
+// Bonus: knowledge of C++, C#, or Rust.`;
 
 // Title classification buckets (for normalization)
 const titleBuckets = [

@@ -3,6 +3,7 @@
   "node_version": "20",
   "env": ".env",
   "graphs": {
-    "keyword-extractor": "./index.js:app"
+    "keyword-extractor": "./index.js:app",
+    "test": "./test.js:app"
   }
 }
